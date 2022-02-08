@@ -1,0 +1,6 @@
+LDN A 20
+LDN C 30
+STR A C
+LDP B C
+ADD A B
+END

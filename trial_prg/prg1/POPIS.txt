@@ -1,0 +1,1 @@
+Sečte dvě čísla na pozicích 30 a 40 a uloží je na pozici 50

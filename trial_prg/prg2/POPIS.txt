@@ -1,0 +1,3 @@
+Na posledních 8 cifer N fibonaciho čísla
+N leží na 255
+Číslo uloží na 254

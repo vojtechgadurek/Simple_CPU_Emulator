@@ -1,0 +1,36 @@
+LDN E 1
+%
+LDN F 1
+%
+LDN H 33
+%
+LDN D 255
+%
+LDP D D
+N0T D
+LDN A 1
+%
+ADC D A
+LDN C 18
+%
+JIF D C
+JMP H
+MIV E
+MOV A
+MIV F
+MOV B
+ADC B A
+MIV A
+MOV F
+MIV B
+MOV E
+LDN C 1
+%
+ADC D C
+LDN G 14
+%
+JMP G
+LDN A 254
+%
+STR B A
+END
