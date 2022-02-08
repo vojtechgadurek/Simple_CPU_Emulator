@@ -1,0 +1,82 @@
+Program načte vstup z MEMORY.txt. Na každé řádka bude ve formátu INDEX DATA.
+Poté program načte vstupní kod ve formátu CODE.txt. Kde každá řádka bude jeden příkaz.
+Paralelně poběží kontrolní program, který bude mít vstup z příkazového řádku. S následujicími příkazy.
+RYCHLOST N-> nechá běžet program určitou rychlostí
+STOP -> zastaví program
+MEMORY -> vypíše obsah paměti
+AKUMULATORY => vypíše obsah akumulátorů
+SHOWPRIKAZY X (Program bude vypisovat příkazy)
+AKUMULÁTORY
+A
+B
+C
+D
+E
+F
+Carry
+Kde X je obecný název akumulátoru
+_____________________________________________________
+PŘÍKAZY
+Fungují na 8-bit
+Načti
+LDP X FROM
+------------------------------------------------------
+LDN X NUMBER
+------------------------------------------------------
+Ulož
+STR X WHERE
+-----------------------------------------------------
+Všechny ostatní operace fungují pouze na akumulátorech
+------------------------------------------------------
+Součet
+Bitově sečte dvě hodnoty
+ADD FIRST SECOND
+Přenos načte do carry
+-----------------------------------------------------
+ADC
+Bitově sečte dvě hodnoty
+ADC FIRST SECOND
+Bez přenosu
+
+-----------------------------------------------------
+AND
+Bitový and
+AND FIRST SECOND
+-----------------------------------------------------
+ORR
+Bitový or
+ORR FIRST SECOND
+-----------------------------------------------------
+NOT
+bitový not
+NOT FIRST
+-----------------------------------------------------
+XOR
+bitový xor
+XOR FIRST SECOND
+-----------------------------------------------------
+SHL
+left shift
+SHL FIRST
+-----------------------------------------------------
+SHR
+Right shift
+SHR FIRST
+-----------------------------------------------------
+SCL 
+Left shift, sle pokud MSB = 1 tak i po posunutí
+SCL FISRT
+-----------------------------------------------------
+SCR
+Right sfift, ale pokud LSB = 1 i po posunutí_________
+-----------------------------------------------------
+JMP
+JMP FIRST
+Jump
+přesune ukazatel kodů na danou hodnotu
+----------------------------------------------------
+JIF
+JIF FIRST SECOND
+IF Jump
+Presune ukazatel na hodnotu FISRT pokud SECOND != 0
+---------------------------------------------------
